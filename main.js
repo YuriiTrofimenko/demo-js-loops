@@ -85,18 +85,17 @@ do {
   i *= 10
 } */
 
+// rows loop
 for (let i = 0; i < 11; i++) {
+  // cells (columns) loop
   for (let j = 0; j < 11; j++) {
     let output
     if (i === 0) {
       output = j
-      // process.stdout.write(`${j}  `)
     } else if (j === 0) {
       output = i
-      // process.stdout.write(`${i}  `)
     } else {
       output = i * j
-      // process.stdout.write(`${i * j}  `)
     }
     output = output.toString()
     while (output.length < 5) {
